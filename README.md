@@ -17,11 +17,9 @@ The coefficient of determination $R^2$ was used to assess the models' performanc
 $$R^2 = 1 - \frac{\sum_{i}(y_i - \hat{y}_i)^2}{\sum_{i}(y_i - \bar{y})^2}$$
 
 
-$\sum_{i}(y_i - \hat{y}_i)^2 \quad \text{represents the Residual Sum of Squares (RSS).}$
+- $\sum_{i}(y_i - \hat{y}_i)^2 \quad \text{represents the Residual Sum of Squares (RSS).}$
+- $\sum_{i}(y_i - \bar{y})^2 \quad \text{represents the Total Sum of Squares (TSS).}$
 
-$
-\sum_{i}(y_i - \bar{y})^2 \quad \text{represents the Total Sum of Squares (TSS).}
-$
 ## Results
 
 The results are summarized in the following table
