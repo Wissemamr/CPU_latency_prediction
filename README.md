@@ -42,3 +42,7 @@ The results are summarized in the following table
 |---------------|----------------|
 | Training      | **0.9913**     |
 | Validation    | **0.9742**     |
+
+
+
+**Note** : Big thanks to **SoAI** for suggesting this fun challenge !
