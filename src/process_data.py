@@ -1,10 +1,9 @@
-from sklearn.preprocessing import StandardScaler
-import pandas as pd
-from typing import List, Dict, Optional, Literal
-from sklearn.preprocessing import LabelEncoder
-import joblib
-from colorama import Fore, Style
+from typing import Dict, List, Literal, Optional
 
+import joblib
+import pandas as pd
+from colorama import Fore, Style
+from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 # CONFIG
 SUCCESS = Fore.GREEN + Style.BRIGHT

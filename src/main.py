@@ -1,14 +1,15 @@
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import r2_score
-from sklearn.ensemble import RandomForestRegressor
-from lightgbm import LGBMRegressor
-from xgboost import XGBRegressor
-from catboost import CatBoostRegressor
-from tqdm import tqdm
-from typing import Dict, Any, Tuple
+from typing import Any, Dict, Tuple
+
 import joblib
+import pandas as pd
+from catboost import CatBoostRegressor
 from colorama import Fore, Style
+from lightgbm import LGBMRegressor
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import r2_score
+from sklearn.model_selection import train_test_split
+from tqdm import tqdm
+from xgboost import XGBRegressor
 
 # CONFIG
 DEBUG: bool = True
@@ -66,13 +67,11 @@ class LatencyPredictionModel:
                 random_state=46, silent=True, allow_writing_files=False
             ),
         }
-
         self.base_models = {}
-
         for name, model in tqdm(models.items(), desc="Training Base Models"):
             # progress bar
             model.fit(X_train, y_train)
-            # get validation r² for training
+            # get r² for training
             train_r2 = r2_score(y_train, model.predict(X_train))
             print(f"{SUCCESS}{name} model R² on training set:   {train_r2:.4f}{RESET}")
             self.base_models[name] = model
