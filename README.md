@@ -14,8 +14,8 @@ Ensemble methods combine predictions from multiple models to improve overall pre
 ## Evaluation metric
 The coefficient of determination $R^2$ was used to assess the models' performances. 
 
-<br>
-$$ R^2 = 1 - \frac{\sum_{i}(y_i - \hat{y}_i)^2}{\sum_{i}(y_i - \bar{y})^2} $$
+
+$ R^2 = 1 - \frac{\sum_{i}(y_i - \hat{y}_i)^2}{\sum_{i}(y_i - \bar{y})^2} $
 
 
 - $\sum_{i}(y_i - \hat{y}_i)^2 \quad \text{represents the Residual Sum of Squares (RSS).}$
