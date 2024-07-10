@@ -2,17 +2,17 @@
 
 
 ## Definition
-Ensemble methods combine predictions from multiple models to improve overall prediction accuracy and robustness.
+Ensemble methods combine predictions from multiple models to improve the overall prediction accuracy and the main model's robustness.
 
 ## Approach
 
-- In our case, we used ensemble methods in order to enhance the coefficient of determination $R^2$ and mitigate individual model biases and variances for the predictions of **CPU latency** in Cloud environments.
+- In our case, we used **ensemble methods** in order to enhance the coefficient of determination $\textbf R^2$ and mitigate individual model biases and variances for the prediction of **CPU latency** in Cloud environments.
 - Initially, 4 algorithms including **LGBMRegressor**, **XGBRegressor**, **RandomForestRegressor**, and **CatBoostRegressor** were trained on the dataset. Each model captures different aspects of the data.
-- Post-training, predictions from the **4** models were averaged using a simple averaging approach
+- Post-training, predictions from the **4** models were **averaged** using a simple averaging approach
 
 
 ## Evaluation metric
-The coefficient of determination $R^2$ was used to assess the models' performances. 
+The coefficient of determination $\textbf R^2$ was used to assess the models' performances. 
 
 
 $$ R^2 = 1 - \frac{\sum_{i}(y_i - \hat{y}_i)^2}{\sum_{i}(y_i - \bar{y})^2} $$
